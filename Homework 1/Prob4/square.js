@@ -13,13 +13,14 @@ window.onload = function init()
     // Four Vertices
     
     var vertices = [
-        vec2( -0.9, -0.9 ),
-        vec2(  -0.9,  0.9 ),
-        vec2(  -0.8, 0.9 ),
-        vec2( -0.8, -0.7),
-        vec2( 0.9, -0.7),
-        vec2( -0.9, -0.9)
-    ];
+        vec2( -0.9, -0.9),
+        vec2( -0.9, 0.9),
+        vec2( -0.8, 0.9),
+        vec2( -0.8, -0.8),
+        vec2( -0.4, -0.8),
+        vec2( -0.4, -0.9)
+        ];
+
 
     //
     //  Configure WebGL
@@ -50,5 +51,5 @@ window.onload = function init()
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
-    gl.drawArrays( gl.TRIANGLE_FAN, 0, 4 );
+    gl.drawArrays( gl.TRIANGLE_FAN, 0, 6 );
 }
